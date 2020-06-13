@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,s=0,i=0;
+  std::cin>>a;
+  while(s<a)
+  {
+  std::cin>>b;
+    s = s+b;
+    i++;
+  }
+  std::cout<<"The number of turns is "<<i;
+}
