@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  int ch,l=0;
+  char s[50];
+  cin>>s;
+  for(int i=0;s[i]!='\0';i++)
+    l++;
+  for(int i=0;i<l;i++)
+  {
+  ch=int(s[i]);
+    if(ch>=65 && ch<=90 || ch>=97 && ch<=122)
+    {
+    }
+    else
+    {
+      for(int j=i+1;j<l;j++)
+      {
+        s[j-1]=s[j]; 
+      }
+      l--;
+      i--;
+    }
+  }
+  for(int i=0;i<l;i++)
+  cout<<s[i];
+  return 0;
+}
