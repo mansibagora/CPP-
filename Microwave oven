@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n;
+  float h;
+  std::cin>>n;
+  std::cin>>h;
+  switch(n)
+  {
+    case 2:
+      h = h + (h *0.5);
+      std::printf("%.2f",h);
+      break;
+    case 3:
+      h = 2*h;
+      std::printf("%.2f",h);
+      break;
+    default:
+      std::cout<<"Number of items is more";
+  }
+}
