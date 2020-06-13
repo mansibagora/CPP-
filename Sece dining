@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a;
+  string s;
+  std::cin>>s;
+  std::cin>>a;
+  if(s == "front")
+    if(a == 1)
+      std::cout<<"Left Handed";
+  	else
+      std::cout<<"Right Handed";
+  else
+    if(a == 1)
+      std::cout<<"Right Handed";
+  	else
+      std::cout<<"Left Handed";
+}
