@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c,i,t=1;
+  std::cin>>a;
+  std::cin>>b;
+  std::cin>>c;
+  if(a>b)
+    if(a<c)
+      std::cout<<"The treasure is in box which has number "<<a<<"\n";
+  	else if(b>c)
+      std::cout<<"The treasure is in box which has number "<<b<<"\n";
+  else
+  std::cout<<"The treasure is in box which has number "<<c<<"\n";
+  else
+    if(b<c)
+      std::cout<<"The treasure is in box which has number "<<b<<"\n";
+  	else if(a>c)
+      std::cout<<"The treasure is in box which has number "<<a<<"\n";
+  else
+  std::cout<<"The treasure is in box which has number "<<c<< "\n";
+  for(i=2;i<10;i++)
+    if((a%i==0) && (b%i==0) && (c%i==0))
+      t = i;
+  std::cout<<"The code to open the box is "<<t;
+}
