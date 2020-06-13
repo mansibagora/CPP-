@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  int j=0,l1,l2,f=0;
+  string s1,s2,s;
+  getline(cin,s1);
+  getline(cin,s2);
+	l1=s1.size();
+  l2=s2.size();
+  if(l1 != l2)
+    cout<<"It is wrong";
+  else
+  {
+    j=l1-1;
+    for(int i=0;i<l1;i++)
+    {
+      if(s1.at(i) != s2.at(j))
+  f=1;
+     j--; 
+    }
+        if(f==1)
+    cout<<"It is wrong";
+    else
+      cout<<"It is correct";
+      }
+  return 0;
+}
