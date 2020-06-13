@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  int l,v=0,ch,c=0,w=0,d=0,sym=0;
+  string s;
+  getline(cin,s);
+  l = s.size();
+  for(int i=0;i<l;i++)
+  {
+  ch=int(s.at(i));
+    if(ch==65 || ch==97 || ch==101 || ch==69 || ch == 73 || ch==105 || ch==79|| ch == 111 || ch==85 || ch==117 )
+      v++;
+    else if(ch>65 && ch<=90 || ch>97 && ch<=122)
+      c++;
+   else if(ch>=48 && ch<=57)
+      d++;
+    else if(ch==32)
+      w++;
+    else
+      sym++;
+  }
+  cout<<"Vowels:"<<v<<"\n";
+  cout<<"Consonants:"<<c<<"\n";
+  cout<<"White Spaces:"<<w<<"\n";
+  cout<<"Digits:"<<d<<"\n";
+  cout<<"Symbols:"<<sym<<"\n";
+  return 0;
+}
