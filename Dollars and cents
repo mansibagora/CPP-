@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c,d,dol,ce;
+  std::cin>>a;
+  std::cin>>b;
+  std::cin>>c;
+  std::cin>>d;
+  dol = a+c;
+  ce = b+d; 
+  if(ce > 99)
+  {
+  dol = dol + (ce/100);
+   ce = ce%100; 
+  }
+  std::cout<<dol<<"\n";
+  std::cout<<ce;
+}
