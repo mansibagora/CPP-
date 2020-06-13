@@ -1,0 +1,14 @@
+#include<iostream>
+int main()
+{
+int n,i=6,j=5,t;
+  std::cin>>n;
+  std::cout<<i<<" ";
+  for(int m=1;m<n;m++)
+  {
+  t= j*m;
+  i = i+t;
+    std::cout<<i<<" ";
+  }
+  return 0;
+}
