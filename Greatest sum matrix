@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int r,c,s;
+  cin>>r>>c;
+  int a[r][c],sr[r],sc[c];
+  for(int i=0;i<r;i++)
+    for(int j=0;j<c;j++)
+      cin>>a[i][j];
+  cout<<"Sum of rows is ";
+    for(int i=0;i<r;i++)
+    {
+      s=0;
+    for(int j=0;j<c;j++)
+     s=s+a[i][j];
+      sr[i]=s;
+      cout<<s<<" ";
+    }
+  int max=0,in;
+  for(int i=0;i<r;i++)
+  {
+	if(sr[i]>max)  
+    {
+      max = sr[i];
+     in =i+1; 
+    }
+  }
+  cout<<"\nRow "<<in<<" has maximum sum";
+  cout<<"\nSum of columns is ";
+  for(int j=0;j<c;j++)
+  {
+    s=0;
+    for(int i=0;i<r;i++)
+      s=s+a[i][j];
+      sc[j]=s;
+      cout<<s<<" ";
+  }
+  max=0;
+   for(int i=0;i<c;i++)
+  {
+	if(sc[i]>max)  
+    {
+      max = sc[i];
+     in =i+1; 
+    }
+  }
+  cout<<"\nColumn "<<in<<" has maximum sum";
+}
