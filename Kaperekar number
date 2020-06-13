@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,s,t=0,h=1,r;
+  std::cin>>n;
+  for(int i=n;i>0;i=i/10)
+  {
+  t++;
+  }
+  s = n*n;
+  for(int i=1;i<=t;i++)
+  {
+  h = h*10;
+  }
+  r = s%h;
+  s = s/h;
+  r = r+s;
+  if(r==n)
+    std::cout<<"Kaprekar Number";
+  else
+    std::cout<<"Not a Kaprekar Number";
+}
