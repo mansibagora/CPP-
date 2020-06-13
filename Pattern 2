@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,c=1,t;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+  if(i%2 == 1)
+  {
+  for(int j=1;j<=i;)
+  {
+  cout<<c;
+    c++;
+    j++;
+    if(j>i)
+      break;
+    std::cout<<"*";
+  }
+    cout<<"\n";
+  }
+    else
+    {
+      for(int j=1;j<=i;j++)
+  {
+    c++;
+  }
+      t=c-1;
+       for(int j=1;j<=i;)
+  {
+         cout<<t;
+    t--;
+             j++;
+    if(j>i)
+      break;
+    std::cout<<"*";
+  }
+    cout<<"\n";
+  }
+  }
+  return 0;
+}
