@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int r,c,n,t,i,f=0;
+  std::cin>>r;
+  std::cin>>c;
+  std::cin>>n;
+  t=r*c;
+  if(n>=1 && n<=c)
+    f=1;
+  for(i=0;i<t;i= i+1)
+    if(n == (i*c +1))
+      f=1;
+  	else if(n == (i*c +c))
+  	  	f=1;
+  if(f==0)
+    std::cout<<"No";
+  else
+    std::cout<<"Yes";
+}
