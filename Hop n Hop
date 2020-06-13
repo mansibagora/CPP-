@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ int a,b;
+  std::cin>>a;
+  std::cin>>b;
+  a = 3-a;
+  b = 4-b;
+  if(a<0)
+    a = -a;
+  if(b<0)
+    b=-b;
+  if(a>b)
+    std::cout<<a;
+  else
+    std::cout<<b;
+  
+}
