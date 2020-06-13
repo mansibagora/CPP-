@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e;
+  float f;
+  std::cin>>a;
+  std::cin>>b;
+  std::cin>>c;
+  d = (a*b*c)/100;
+  std::cout<<d<<endl;
+  e = d+a;
+  std::cout<<e<<endl;
+  f = 0.02*d;
+  std::cout<<f<<endl;
+  std::cout<<(e - f)<<endl;
+}
