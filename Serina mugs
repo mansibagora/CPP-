@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int printresult(int*,int,int);
+int main()
+{
+  int n,vc,f;
+  cin>>n>>vc;
+  int a[n];
+  for(int i=0;i<n;i++)
+  {
+  cin>>a[i];
+  }
+  f = printresult(a,vc,n);
+  if(f==0)
+    cout<<"NO";
+  else
+    cout<<"YES";
+}
+int printresult(int* a,int vc,int n)
+{
+  int f=0,c=0;
+  for(int i=0;i<n;i++)
+    c = c + a[i];
+  if(c<=vc)
+    f=1;
+  return f;
+}
