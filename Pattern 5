@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,u,c=1,m;
+  cin>>n;
+  u = (n*(n+1));
+  for(int i=1;i<=n;i++)
+  {
+    for(int k = i;k>1;k--)
+      cout<<"--";
+  for(int j=i;j<=n;)
+  {
+    cout<<c++;
+    j++;
+    if(j>n)
+      break;
+   cout<<"*"; 
+  }
+    for(int j=i;j<=n;j++,u--);
+    m=u+1;
+     for(int j=i;j<=n;j++)
+  {
+    cout<<"*"<<m++;
+  }
+    cout<<"\n";
+  }
+  
+return 0;
+}
