@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c,d,e,f,g,h,i,l,m,n;
+  std::cin>>a;
+  std::cin>>b;
+  std::cin>>c;
+  std::cin>>d;
+  std::cin>>e;
+  std::cin>>f;
+  std::cin>>g;
+  std::cin>>h;
+  std::cin>>i;
+  l = (a - (0.01*b*a)) + c;
+  m = (d - (0.01*d*e)) + f;
+  n = (g - (0.01*g*h)) + i ;
+  std::cout<<"In Flipkart Rs."<<l<<"\n";
+std::cout<<"In Snapdeal Rs."<<m<<"\n";
+std::cout<<"In Amazon Rs."<<n<<"\n";
+  if(l<=m &&l<=n)
+      std::cout<<"He will prefer Flipkart";
+  else if(m<n && m<l)
+      std::cout<<"He will prefer Snapdeal";
+ else
+      std::cout<<"He will prefer Amazon";
+}
