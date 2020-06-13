@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b;
+  std::cin>>a;
+  std::cin>>b;
+  if(a>b)
+    b = 100 +b;
+  std::cout<<b-a;
+  
+}
