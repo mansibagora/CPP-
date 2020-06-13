@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c,d,e;
+  float f,g,h,i;
+  std::cin>>a;
+  std::cin>>b;
+  std::cin>>c;
+  std::cin>>d;
+ e = a/6;
+  e = e + (a%6);
+ std::cout<<e<<"\n";
+  f = (float)(d/6);
+  f = f + (float)(d%6)/10;
+  std::cout<<f<<"\n";
+  g = (float)c/f;
+  std::printf("%.1f\n",g);
+  h = (float)(a/6);
+  h = h + (float)(a%6)/10;
+  i = (float)b/h;
+  std::printf("%.1f\n",i);
+  if(g<i)
+    std::cout<<"Not Eligible to Win";
+  else
+    std::cout<<"Eligible to Win";
+}
