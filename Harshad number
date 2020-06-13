@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,d=0,r;
+  std::cin>>n;
+  for(int i=n;i>0;i=i/10)
+  {
+  r = i%10;
+    d = d + r;
+  }
+  if(n%d == 0)
+    std::cout<<"Harshad Number";
+  else
+    std::cout<<"Not Harshad Number";
+}
