@@ -1,0 +1,13 @@
+#include<iostream>
+int main()
+{
+float n = 0.5;
+  int i;
+  std::cin>>i;
+  std::cout<<n<<" ";
+  for(int j=2;j<=i;j++)
+  {
+    n = n*3;
+    std::cout<<n<<" ";
+  }
+}
