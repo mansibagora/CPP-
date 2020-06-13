@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n;
+  cout<<"Enter the number of elements in the array \nEnter the elements in the array\nEnter the location where you wish to insert an element \n";
+  cin>>n;
+  int a[n],l;
+  for(int i=0;i<n;i++)
+    cin>>a[i];
+  cin>>l;
+  if(l-1 >n)
+    cout<<"Invalid Input";
+  else
+  {
+    cout<<"Enter the value to insert\nArray after insertion is\n";
+    int v;
+cin>>v;
+    for(int i=n;i>=l;i--)
+      a[i]=a[i-1];
+    a[l-1]=v;
+    for(int i=0;i<=n;i++)
+    cout<<a[i]<<"\n";
+  }
+}
