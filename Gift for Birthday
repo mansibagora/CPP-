@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,f=0;
+  std::cin>>n;
+  if(n%4 ==0)
+  {
+  	if(n%100 != 0)
+      f=1;
+    else
+      if(n%400 == 0)
+        f=1;
+  }
+  if(f==0)
+    std::cout<<n<<" is not a leap year";
+  else
+    std::cout<<n<<" is a leap year";
+}
