@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+struct emp
+{
+  string name;
+  int id;
+  int age;
+  string d;
+  int salary;
+  
+};
+int main() 
+{
+ emp e;
+  cout<<"Enter name: \nEnter ID: \nEnter age: \nEnter designation: \nEnter Salary: \nEmployee Details \nName of the Employee : ";
+  cin>>e.name;
+  cin>>e.id;
+  cin>>e.age;
+  cin>>e.d;
+  cin>>e.salary;
+  cout<<e.name;
+  cout<<"\nID of the Employee : "<<e.id;
+  cout<<"\nAge of the Employee : "<<e.age;
+  cout<<"\nDesignation of the Employee : "<<e.d;
+  cout<<"\nSalary of the Employee : "<<e.salary;
+}
