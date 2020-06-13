@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int check(int *a,int n)
+{
+int f,e=0,o=0;
+  for(int i=0;i<n;i++)
+  {
+  if(*(a+i)%2 == 0)
+    e++;
+    else
+      o++; 
+  }
+  if(e==0)
+  f=2;
+  else if(o==0)
+    f=1;
+  else
+    f=3;
+  return f;
+}
+int main()
+{
+  int n,f;
+  cin>>n;
+  int a[n];
+  for(int i=0;i<n;i++)
+    cin>>a[i];
+  f = check(a,n);
+  cout<<"Enter the number of elements in the array\nEnter the elements in the array\n";
+  if(f==1)
+    cout<<"The array is Even";
+  else if(f==2)
+  cout<<"The array is Odd";
+  else
+    cout<<"The array is Mixed";
+}
