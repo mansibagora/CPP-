@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string>
+using namespace std;
+struct colleges
+{
+string name;
+string city;
+int y;    
+float per;  
+};
+int main()
+{
+  int n;
+  cin>>n;
+  colleges c[n];
+  cout<<"Enter the number of colleges\n";
+  for(int i=0;i<n;i++)
+  {
+    cin>>c[i].name;
+    cin>>c[i].city;
+    cin>>c[i].y;
+    cin>>c[i].per;
+  }
+  for(int i=0;i<n;i++)
+  {
+    cout<<"Enter the details of college "<<i+1<<"\nEnter name\nEnter city\nEnter year of establishment\nEnter pass percentage\n";  
+  }
+  cout<<"Details of colleges\n";
+  for(int i=0;i<n;i++)
+  {
+    cout<<"College:"<<i+1<<"\nName:"<<c[i].name<<"\nCity:"<<c[i].city<<"\nYear of establishment:"<<c[i].y<<"\nPass percentage:"<<c[i].per<<"\n";
+  }
+}
