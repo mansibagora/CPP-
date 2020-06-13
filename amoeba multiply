@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,i=1,j=1,t;
+  std::cin>>n;
+  for(t = 3;t<n-1;t=t+2)
+  {
+  i = i+j;
+  j = j+i;
+}
+  if(n%2 == 0)
+  std::cout<<i+j;
+  else
+    std::cout<<j;
+}
