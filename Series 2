@@ -1,0 +1,13 @@
+#include<iostream>
+int main()
+{
+int n,i=11,s;
+  std::cin>>n;
+  for(int m=1;m<=n;m++)
+  {
+    s = i*i;
+    std::cout<<s<<" ";
+    i = i+4;
+  }
+return 0;
+}
