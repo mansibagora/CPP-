@@ -1,0 +1,16 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+  float n,s;
+  float l,t;
+  int d;
+  std::cin>>n;
+  s = pow(n,0.5);
+  l = (1/s) * n;
+  t = (1/s) * l;
+  l = l+t;
+  d = n + l;
+  std::cout<<d;
+}
