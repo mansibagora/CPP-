@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  int f;
+  string s,s2="the";
+  getline(cin,s);
+  f= s.find(s2);
+  s.erase(f,4);
+  int l = s.size();
+  //for(int i=f+1;i<l;i++)
+  //{
+  f = s.find(s2,f+1);
+    s.erase(f,4);
+  //}
+  cout<<s;
+  return 0;
+}
