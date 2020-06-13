@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b;
+  float c,d,e;
+  std::cin>>c;
+  std::cin>>a;
+  std::cin>>b;
+  d = c * (float)a;
+  e =(float)b;
+  if(e<=d)
+    std::cout<<"Can reach";
+  else
+    std::cout<<"Cannot reach";
+}
