@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int r,c,a,t;
+  std::cin>>r;
+  std::cin>>c;
+  std::cin>>a;
+  if((r+1)<= a && a <= 2*r )
+    std::cout<<"It is a mango tree";
+  else if(r*(c-2) <= a && a <= r*(c-1))
+    std::cout<<"It is a mango tree";
+  else
+    std::cout<<"It is not a mango tree";
+}
