@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+struct dist
+{
+int f;
+  float i;
+};
+int main()
+{
+  dist d1,d2;
+  int f1;
+  float i1;
+  cin>>d1.f;
+  cin>>d1.i;
+  cin>>d2.f;
+  cin>>d2.i;
+  f1=d1.f+d2.f;
+  i1=d1.i+d2.i;
+  if(i1 > 12)
+  {
+    i1=i1-12;
+    f1++;
+  }
+  cout<<f1<<"\'-"<<i1<<"\"";
+}
